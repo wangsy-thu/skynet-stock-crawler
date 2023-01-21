@@ -1,0 +1,20 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /crawler
+
+spring:
+  application:
+    name: crawler-service
+  rabbitmq:
+    virtual-host: /
+    host: 127.0.0.1  # 更换成自己的虚拟机IP地址
+    port: 5672
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+    username: guest  # 更换成自己的username
+    password: guest  # 更换成自己的password

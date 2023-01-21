@@ -1,0 +1,18 @@
+### 爬取数据-远程
+GET http://192.168.44.100:12000/crawler/async-craw/fetch-data
+Accept: application/json
+
+
+### 查询数据导入状态-远程
+GET http://192.168.44.100:12000/crawler/async-craw/task-info?taskId=281f086f-d0d6-414b-a4cc-60ad6a2da400
+Accept: application/json
+
+
+### 爬取数据-本地
+GET http://127.0.0.1:9000/crawler/async-craw/fetch-data
+Accept: application/json
+
+
+### 查询数据导入状态-本地
+GET http://127.0.0.1:9000/crawler/async-craw/task-info?taskId=2db2fd30-644d-478f-abc6-7f1dbdcdeec7
+Accept: application/json
